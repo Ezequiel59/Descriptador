@@ -1,0 +1,28 @@
+header{
+    background-color: aquamarine;
+    padding: 20px;
+    text-align: right;
+}
+
+
+.H10{
+    display: flex;
+    padding: 100px;
+    
+}
+
+.d1{
+    background-color: rgb(157, 123, 123);
+    padding: 20px;
+}
+.d2{
+    background-color: rgb(111, 111, 149);
+    color: white;
+    padding: 20px;
+
+}
+button{
+    display: block;
+    margin-top: 20px;
+}
+

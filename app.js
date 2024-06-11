@@ -17,15 +17,15 @@ function encriptar(){
 
     for (let index = 0; index < encriptado.length; index++) { //comprueba si hay valores parecido dentro del array
         if (encriptado[index] == "a") {
-             encriptado[index] = "$"
+             encriptado[index] = "ai"
         } else if(encriptado[index] == "e"){
-             encriptado[index] = "%"
+             encriptado[index] = "enter"
         } else if(encriptado[index] == "i"){
-             encriptado[index] = "&"
+             encriptado[index] = "imes"
         } else if(encriptado[index] == "o"){
-             encriptado[index] = "/"
+             encriptado[index] = "ober"
         } else if(encriptado[index] == "u"){
-             encriptado[index] = "("
+             encriptado[index] = "ufat"
         }
      }
 
@@ -40,19 +40,6 @@ function desencriptar(){
      let encriptado = codigo.split("");
      let parrafo = document.getElementById("textoEncriptadoResultado")
 
-    for (let index = 0; index < encriptado.length; index++) {
-        if (encriptado[index] == "$") {
-             encriptado[index] = "a"
-        } else if(encriptado[index] == "%"){
-             encriptado[index] = "e"
-        } else if(encriptado[index] == "&"){
-             encriptado[index] = "i"
-        } else if(encriptado[index] == "/"){
-             encriptado[index] = "o"
-        } else if(encriptado[index] == "("){
-             encriptado[index] = "u"
-        }
-     } 
      if(document.getElementById("textoIncriptar").value != 0){
           parrafo.innerText = encriptado.join("")
        }
